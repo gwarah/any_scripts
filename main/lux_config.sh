@@ -23,16 +23,16 @@ export LXV_FLAG_ENV=0
 
 ####
 #
-# Variáveis de uso geral
+# general use variables
 #
 ####
-export LXV_CR="\n"                  # caracter de retorno de linha
-export LXV_RETURN=0                 # variável utilizada para retorno de uma função ou procedimento
+export LXV_CR="\n"                  # CR char
+export LXV_RETURN=0                 # Return value of a function or script
 export LXV_ECHO_RETURN=1            # 1, echoes the function return; 0, not
-export LXV_DELIM_DATE="/"           # delimitador para datas
-export LXV_DELIM_TIME=":"           # delimitador para horas
-export LXV_MASK_DATE="%d/%m/%Y"     # Máscara básica de data
-export LXV_MASK_TIME="%H:%M:%S"     # Máscara básica de hora
+export LXV_DELIM_DATE="/"           # date delimiter
+export LXV_DELIM_TIME=":"           # time delimiter
+export LXV_MASK_DATE="%d/%m/%Y"     # default date mask
+export LXV_MASK_TIME="%H:%M:%S"     # default time mask
 
 ####
 #
