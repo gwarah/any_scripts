@@ -1,0 +1,53 @@
+<html>
+<head>
+	<title>validação de CPFs/CNPJ</title>
+</head>
+<body>
+    <script src="cnpj_cpf.js"></script>
+<script type="text/javascript">
+
+    function WinLoad() {
+        document.getElementById("bt_cpf").addEventListener("click", validar_cpf, false);
+        document.getElementById("bt_cnpj").addEventListener("click", validar_cnpj, false);
+    }
+    
+    window.onload = WinLoad;
+    
+    // validação de CPF
+    function validar_cpf() {
+        let p_cpf=document.getElementById("txt_cpf").value;
+        let v_cpf=new Cpf(p_cpf);
+        // alert("cheguei aqui" + p_cpf);
+        v_cpf.validar();
+        document.getElementById("div_resultado_cpf").innerHTML = v_cpf.show_status();
+        return true;
+    }
+    
+    // validação de CNPJ
+    function validar_cnpj() {
+        let p_cnpj=document.getElementById("txt_cnpj").value;
+        let v_cnpj=new Cnpj(p_cnpj);
+        // alert("cheguei aqui" + p_cnpj);
+        v_cnpj.validar();
+        document.getElementById("div_resultado_cnpj").innerHTML = v_cnpj.show_status();
+        return true;
+    }
+</script>
+
+<p>Validação do CPF/CNPJ</p>
+
+<p>
+CPF: <input type="text" id="txt_cpf" value=""> 
+<input type="button" id="bt_cpf" value="Validar">
+</p><br>
+<div id="div_resultado_cpf">não validado</div>
+
+<p>
+CNPJ: <input type="text" id="txt_cnpj" value=""> 
+<input type="button" id="bt_cnpj" value="Validar">
+</p><br>
+<div id="div_resultado_cnpj">não validado</div>
+
+
+</body>
+</html>

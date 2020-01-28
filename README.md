@@ -9,7 +9,7 @@ Collection of small scripts designed to perform basic and general tasks
 
 ## Prerequisites
 
-1. Linux OS, shell bash OR windows with cygwin (required)
+1. Linux OS, shell bash OR windows with cygwin or shell tool (required)
 2. Dialogs packages: zenity, dialog or whiptail instaled (strongly recommended)
 
 ## Linux environment impacts
@@ -39,3 +39,6 @@ Give an example
 Give an example
 ```
 
+## Scripts avulses
+
+Inside `[Root]/avulses` folder has some detached scripts that will be integrated to the project
