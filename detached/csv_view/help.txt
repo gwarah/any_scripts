@@ -1,0 +1,60 @@
+1. What is 
+
+A simple shell script to view fields of csv files (one line at each time)
+
+2. Syntax
+
+2.1. lux_csv_view.sh [-h], to see this help
+2.2. lux_csv_view.sh [-d <delimiter>] <file.csv>, to run it
+
+parameters:
+
+-d <delimiter> : use it to set the field delimiter of <file.csv>, if ommited it will be the default (see section 3 to more details)
+<file.csv>     : the file csv 
+
+3. Using the program
+
+3.1. put this script, lux_csv_search.awk file and this help file in a directory (ex. /path/to/script);
+3.2. create an alias, ex csview=/path/to/script/lux_csv_view.sh
+3.3. alter these lines of scripts to define the path of script and the default delimiter
+
+export delim_field=';'
+export PATH_APP=/path/to/script
+
+3.3. Run the script. Ex: 
+
+csview -d ';' file.csv
+
+4. Using the script
+
+4.1. lets suppose file.cvs has this content:
+
+Name;Email;Age
+Joe Sanchez;joe@example.com;40
+Hannah Silva;hannah@example.com;37
+Carlos Jr;junior@example.com;48
+Natasha Yang;natyang@example.com;28
+Giovanni Hertz;hertz@example.com;38
+
+As soon as you access the program you will see a interface like this:
+
+------------------------ Lux Csv Viewer Vs. 1.0.0 -----------------------------
+1) Name=Joe Sanchez
+2) Email=joe@example.com
+3) Age=40
+-------------------------------------------------------------------------------
+Results: Record #1
+
+press [H]elp to help session or [Q]uit
+Choose an option: __ 
+
+4.2. Options
+
+H        : Show this help;
+B        : Begin of file (first record. Name=Joe Sanchez);
+E        : End of file (last record. Name=Giovanni Hertz);
++<N>     : Jump +<N> lines;
+-<N>     : Jump -<N> lines;
+<enter>  : Next register. Same of +1;
+S <text> : Search a line containing <text> in any field. S with no parameter, search <text> after the record current;
+Q        : Quit the program
