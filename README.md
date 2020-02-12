@@ -41,4 +41,4 @@ Give an example
 
 ## Scripts avulses
 
-Inside `[Root]/avulses` folder has some detached scripts that will be integrated to the project
+Inside `[Root]/detached` folder has some detached scripts that will be integrated to the project

@@ -6,8 +6,8 @@
 # Description  : main configuration
 #
 # Versions
-#   0.0.1dr;;gwarah; 22/12/2018; first draf
 #   0.0.1a;;gwarah; 01/06/2019; first alpha version
+#   0.0.1dr;;gwarah; 22/12/2018; first draf
 # ======================================================================
 #
 
@@ -33,12 +33,13 @@ export LXV_MASK_TIME="%H:%M:%S"     # default time mask
 
 ####
 #
-# Directories for the main tasks (Ex. logs and temp files)
+# Directories and files for the main tasks (Ex. logs and temp files)
 #
 ####
 export LXV_PATH_SCR=~/.lux                # main directory
 export LXV_PATH_LOG=${LXV_PATH_SCR}/log   # log directory
 export LXV_PATH_TMP=${LXV_PATH_SCR}/tmp   # temp files directory
+export LXV_FILENAME_TMP="${LXV_PATH_TMP}/__$(date +${LXV_LOG_FILE_MASK}).tmp"
 
 ####
 #
@@ -60,7 +61,7 @@ export LXV_LINE_LENGTH=50       # line length
 export LXV_LOG_OUTPUT=0                      # set the output stream: 0, stdout (default); 1, file ${LXV_LOG_FILE_NAME}; 2, both
 export LXV_LOG_FILE_PREFIX='log'             # prefix of the name of file log
 export LXV_LOG_FILE_MASK='%Y%m'              # date mask
-# file name
+# log file name
 export LXV_LOG_FILE_NAME="${LXV_PATH_LOG}/${LXV_LOG_FILE_PREFIX}_$(date +${LXV_LOG_FILE_MASK}).txt"
 
 # lxf_echo output register
