@@ -14,14 +14,14 @@ Collection of small scripts designed to perform basic and general tasks
 
 ## Linux environment impacts
 
-This project may creates some environment variables, shell functions and/or shell alias in your system. 
-So these conventions were adopted to identify these objects at a more easily way
+This project may require to create some environment variables, shell functions and/or shell alias in your system. 
+So these conventions were adopted to identify these objects:
 
 1. The names of visible environment variables begins with LXV_;
 2. The names of functions begins with lxf_;
 3. The names of alias begins with lx;
 
-    Before using any script from this project make sure that your use does not impact the operation of other Linux software or packages
+    before using any script of this project check the possible impacts on your system
 
 ### Installing
 
@@ -39,6 +39,6 @@ Give an example
 Give an example
 ```
 
-## Scripts avulses
+## Detached scripts 
 
 Inside `[Root]/detached` folder has some detached scripts that will be integrated to the project

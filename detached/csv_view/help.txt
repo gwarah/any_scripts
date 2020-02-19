@@ -1,6 +1,10 @@
+Linux Utilities
+CVS View
+Last Update: 18/02/2020
+
 1. What is 
 
-A simple shell script to view fields of csv files (one line at each time)
+A simple shell script to view field values of csv files (one line at a time).
 
 2. Syntax
 
@@ -15,7 +19,7 @@ parameters:
 3. Using the program
 
 3.1. put this script, lux_csv_search.awk file and this help file in a directory (ex. /path/to/script);
-3.2. create an alias, ex csview=/path/to/script/lux_csv_view.sh
+3.2. create an alias, ex lxcsview=/path/to/script/lux_csv_view.sh
 3.3. alter these lines of scripts to define the path of script and the default delimiter
 
 export delim_field=';'
@@ -23,7 +27,7 @@ export PATH_APP=/path/to/script
 
 3.3. Run the script. Ex: 
 
-csview -d ';' file.csv
+lxcsview -d ';' file.csv
 
 4. Using the script
 
@@ -38,7 +42,7 @@ Giovanni Hertz;hertz@example.com;38
 
 As soon as you access the program you will see a interface like this:
 
------------------------- Lux Csv Viewer Vs. 1.0.0 -----------------------------
+------------------------ Lux Csv Viewer Vs. X.Y.Z -----------------------------
 1) Name=Joe Sanchez
 2) Email=joe@example.com
 3) Age=40
@@ -53,8 +57,11 @@ Choose an option: __
 H        : Show this help;
 B        : Begin of file (first record. Name=Joe Sanchez);
 E        : End of file (last record. Name=Giovanni Hertz);
-+<N>     : Jump +<N> lines;
--<N>     : Jump -<N> lines;
+G <N>    : Go to <N>th record;
+<N>      : Same of G <N>;
++<N>     : Advances <N> records foward;
+-<N>     : Rewind <N> records back;
 <enter>  : Next register. Same of +1;
-S <text> : Search a line containing <text> in any field. S with no parameter, search <text> after the record current;
+S <text> : Search a line containing <text> in any field. 
+           S with no parameter, search <text> again;
 Q        : Quit the program
