@@ -1,11 +1,12 @@
 #!/bin/bash
 # File       : lux_echopad.sh
-# Goal       : echo a text "padded" with a char
+# Goal       : echo a text "padded" with a sequence of chars
 # Requisites :
 #     1. SHELL=bash
-# Syntax     : lux_echopad.sh [-l <line_length>] [-c <char>]
+# Syntax     : lxf_echopad [-l <line_length>] [-c <char>]
 # History    :
 #   #version;date;description
+#   0.1.1b; 18/02/2020; second beta
 #   0.1.0b; 18/02/2020; first beta
 #   0.0.1dr; 03/02/2020; first draft
 #
@@ -35,7 +36,6 @@ function lxf_echopad {
     local vt_pad
     local v_mod
     local v2_pad
-    local v_textpad
     
     #
     # getopts 

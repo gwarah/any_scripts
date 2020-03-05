@@ -3,10 +3,11 @@
 # Goal       : echo <date>;[<tags>;]<text>
 # Requisites :
 #     1. SHELL=bash
-# Syntax     : lux_echopad.sh [-m <datemask>] [-t <tag>] text
+# Syntax     : lxf_echodate [-m <datemask>] [-t <tag>] text
 # History    :
 #   #version;date;description
-#   0.1.0b; __/02/2020; first beta
+#   0.1.1b; 02/03/2020; code improved
+#   0.1.0b; 27/02/2020; first beta
 #   0.0.1dr; 18/02/2020; first draft
 #
 
